@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+body>div {
+    margin: auto;
+}
+
+ /* ======= Toast message ======== */
+.toast {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 0;
+    border-radius: 6px;
+    box-shadow: 0 5px 8px 5px rgba(0, 0, 0, 0.08);
+}
+
+.toast + .toast {
+    margin-top: 28px;
+}
+
+.toast__icon,
+.toast__close {
+    padding: 0 18px;
+    flex-grow: 1;
+}
+
+.toast__close {
+    font-size: 15px;
+    margin-left: 23px; 
+    cursor: pointer;
+}
+
+ /* Toast Info */
+.toast--info .line  {
+    border-left: 4px solid #007bc3;
+    border-radius: 3px;
+    height: 65px;
+    margin-left: 8px;
+}
+
+.toast--info .toast__icon {
+    font-size: 26px;
+    color:#007bc3;
+}
+
+.toast--info .toast__body {
+    letter-spacing: .5px ;
+}
+
+.toast--info .toast__msg,
+.toast--info .toast__close {
+    color: #94969b;
+} 
+
+.toast--info .toast__msg {
+    font-weight: 600;
+} 
+
+ /* Toast Warning */
+.toast--warning .line  {
+    border-left: 4px solid #f0a92e;
+    border-radius: 3px;
+    height: 65px;
+    margin-left: 8px;
+}
+
+.toast--warning .toast__icon {
+    font-size: 26px;
+    color:#f0a92e;
+}
+.toast--warning .toast__body {
+    letter-spacing: .5px ;
+}
+
+.toast--warning .toast__msg,
+.toast--warning .toast__close {
+    color: #94969b;
+} 
+
+.toast--warning .toast__msg {
+    font-weight: 600;
+} 
+
+ /* Toast Success */
+.toast--success .line  {
+    border-left: 4px solid #21a67a;
+    border-radius: 3px;
+    height: 65px;
+    margin-left: 8px;
+}
+
+.toast--success .toast__icon {
+    font-size: 26px;
+    color: #21a67a;
+}
+.toast--success .toast__body {
+    letter-spacing: .5px ;
+}
+
+.toast--success .toast__msg,
+.toast--success .toast__close {
+    color: #94969b;
+} 
+
+.toast--success .toast__msg {
+    font-weight: 600;
+} 
