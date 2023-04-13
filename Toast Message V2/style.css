@@ -1,6 +1,13 @@
 /* CSS credit by TomLe04 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+:root {
+    --blue: #007bc3;
+    --yellow: #f0a92e;
+    --green: #21a67a;
+    --gray: #94969b;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -45,7 +52,7 @@ body>div {
 
  /* Toast Info */
 .toast--info .line  {
-    border-left: 4px solid #007bc3;
+    border-left: 4px solid var(--blue);
     border-radius: 3px;
     height: 65px;
     margin-left: 8px;
@@ -53,7 +60,7 @@ body>div {
 
 .toast--info .toast__icon {
     font-size: 26px;
-    color:#007bc3;
+    color:var(--blue);
 }
 
 .toast--info .toast__body {
@@ -62,7 +69,7 @@ body>div {
 
 .toast--info .toast__msg,
 .toast--info .toast__close {
-    color: #94969b;
+    color: var(--gray);
 } 
 
 .toast--info .toast__msg {
@@ -71,7 +78,7 @@ body>div {
 
  /* Toast Warning */
 .toast--warning .line  {
-    border-left: 4px solid #f0a92e;
+    border-left: 4px solid var(--yellow);
     border-radius: 3px;
     height: 65px;
     margin-left: 8px;
@@ -79,7 +86,7 @@ body>div {
 
 .toast--warning .toast__icon {
     font-size: 26px;
-    color:#f0a92e;
+    color:var(--yellow);
 }
 .toast--warning .toast__body {
     letter-spacing: .5px ;
@@ -87,7 +94,7 @@ body>div {
 
 .toast--warning .toast__msg,
 .toast--warning .toast__close {
-    color: #94969b;
+    color: var(--gray);
 } 
 
 .toast--warning .toast__msg {
@@ -96,7 +103,7 @@ body>div {
 
  /* Toast Success */
 .toast--success .line  {
-    border-left: 4px solid #21a67a;
+    border-left: 4px solid var(--green);
     border-radius: 3px;
     height: 65px;
     margin-left: 8px;
@@ -104,7 +111,7 @@ body>div {
 
 .toast--success .toast__icon {
     font-size: 26px;
-    color: #21a67a;
+    color: var(--green);
 }
 .toast--success .toast__body {
     letter-spacing: .5px ;
@@ -112,7 +119,7 @@ body>div {
 
 .toast--success .toast__msg,
 .toast--success .toast__close {
-    color: #94969b;
+    color: var(--gray);
 } 
 
 .toast--success .toast__msg {
